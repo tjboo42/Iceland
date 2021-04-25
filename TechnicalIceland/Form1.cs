@@ -19,7 +19,7 @@ namespace WinFormsApp
     public partial class Form1 : Form
     {
         List<string> products = new List<string>(); //Product types to select for ItemName
-        List<ItemModel> items = GetTestItems("TestInputOriginal.txt"); //Sets to original for demo, in practice this text file should be updated
+        List<ItemModel> items = GetTestItems(Directory.GetParent(Environment.CurrentDirectory).Parent.FullName + "\\TestInputOriginal.txt"); //Sets to original for demo, in practice this text file should be updated
         public Form1()
         {
             InitializeComponent();
